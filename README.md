@@ -1,26 +1,102 @@
 # Tic Tac Toe Game
 
-Welcome to Tic Tac Toe! This is a simple implementation of the classic Tic Tac Toe game using HTML, CSS, and JavaScript.
+This is a simple implementation of the classic Tic Tac Toe game built using HTML, CSS, and JavaScript. The game allows two players to play alternately and includes sound effects, animations, and a reset functionality.
+
+---
 
 ## Features
 
-- Playable Tic Tac Toe game
-- Audio effects for turns and game over
-- Win detection
-- Visual effects for winning lines
-- Game reset functionality
+- **Interactive Gameplay**: Two players can take turns playing as `X` and `O`.
+- **Winning Animation**: A line highlights the winning combination when a player wins.
+- **Responsive Design**: Works well on desktop and mobile devices.
+- **Sound Effects**: Includes sounds for turns, winning, and game over.
+- **Reset Button**: Restart the game anytime.
 
-## How to Play
-
-1. Open the `index.html` file in your browser.
-2. Click on any box to mark it with "X" or "O".
-3. Players take turns to place their marks.
-4. The game checks for a win condition after every move.
-5. The game announces the winner and highlights the winning line.
-6. Click the reset button to start a new game.
+---
 
 ## Project Structure
 
-- **HTML:** Provides the basic structure and elements for the game.
-- **CSS:** Adds styling and layout for the game board and elements.
-- **JavaScript:** Contains the game logic, win detection, and event handling.
+```
+TicTacToe/
+├── assets/
+│   ├── images/
+│   │   └── excited.gif
+│   ├── sound/
+│       ├── music.mp3
+│       ├── ting.mp3
+│       └── gameover.mp3
+├── index.html
+├── style.css
+└── script.js
+```
+
+### Files:
+
+1. **`index.html`**:
+   - Contains the structure of the game, including the grid and game info.
+2. **`style.css`**:
+   - Defines the styling for the game, making it visually appealing and responsive.
+3. **`script.js`**:
+   - Contains the logic for the game, including player turns, win detection, and reset functionality.
+4. **Assets**:
+   - `images/`: Contains the winning animation GIF.
+   - `sound/`: Contains sound effects for game interactions.
+
+---
+
+## How to Run the Project
+
+1. Clone the repository or download the project files.
+2. Open the `index.html` file in any modern web browser.
+3. Start playing the game!
+
+---
+
+## Gameplay Instructions
+
+1. The game starts with Player X.
+2. Click on an empty box to place your mark (`X` or `O`).
+3. Alternate turns until a player wins or the game ends in a draw.
+4. The winner is highlighted with an animation.
+5. Use the "Reset" button to restart the game anytime.
+
+---
+
+## Live Preview
+
+You can view and play the game live using GitHub Pages:
+[Live Preview](https://nikhilshukla2161.github.io/Tic-Tac-Toe-Game/)
+
+Replace `yourusername` with your GitHub username to make the link functional.
+
+---
+
+## Technical Details
+
+- **Technologies Used**:
+  - HTML5 for structure.
+  - CSS3 for styling and animations.
+  - JavaScript for game logic and interactivity.
+- **Responsive Design**:
+  - The game grid adjusts based on the screen size for an optimal user experience.
+
+---
+
+## Future Enhancements
+
+- Add a single-player mode with AI.
+- Track and display scores for multiple rounds.
+- Add a timer for each player's turn.
+
+---
+
+## Credits
+
+- Sound effects and images are from royalty-free resources.
+- Developed by [Your Name].
+
+---
+
+## License
+
+This project is open-source and available under the MIT License.

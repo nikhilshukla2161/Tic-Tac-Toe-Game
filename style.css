@@ -1,117 +1,131 @@
+/* Importing Google Fonts for styling */
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap");
+
+/* Resetting default margin and padding for all elements */
 * {
   margin: 0;
   padding: 0;
 }
 
+/* Navigation bar styling */
 nav {
-  background-color: rgb(37, 9, 37);
-  color: white;
-  height: 65px;
-  font-size: 27px;
-  display: flex;
-  align-items: center;
-  padding: 0 12px;
-  font-family: "Roboto", sans-serif;
+  background-color: rgb(37, 9, 37); /* Dark background color */
+  color: white; /* White text color */
+  height: 65px; /* Fixed height */
+  font-size: 27px; /* Font size for the text */
+  display: flex; /* Flexbox for centering content */
+  align-items: center; /* Vertical centering */
+  padding: 0 12px; /* Horizontal padding */
+  font-family: "Roboto", sans-serif; /* Font for navigation text */
 }
 
+/* Styling unordered lists inside navigation */
 nav ul {
-  list-style-type: none;
+  list-style-type: none; /* Remove bullet points */
 }
 
+/* Game container alignment */
 .gameContainer {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  display: flex; /* Flexbox for layout */
+  justify-content: center; /* Center the game container */
+  margin-top: 50px; /* Spacing from the top */
 }
 
+/* Grid layout for the Tic Tac Toe board */
 .container {
-  display: grid;
-  grid-template-rows: repeat(3, 10vw);
-  grid-template-columns: repeat(3, 10vw);
-  font-family: "Roboto", sans-serif;
-  position: relative;
+  display: grid; /* Grid layout */
+  grid-template-rows: repeat(3, 10vw); /* 3 rows with equal height */
+  grid-template-columns: repeat(3, 10vw); /* 3 columns with equal width */
+  font-family: "Roboto", sans-serif; /* Font for the board text */
+  position: relative; /* For positioning elements like the line */
 }
 
+/* Individual box styling on the grid */
 .box {
-  border: 2px solid black;
-  font-size: 8vw;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: 2px solid black; /* Border for each box */
+  font-size: 8vw; /* Font size for X and O */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
+/* Hover effect for each box */
 .box:hover {
-  background-color: rgb(242, 234, 250);
+  background-color: rgb(242, 234, 250); /* Light purple background on hover */
 }
 
+/* Styling for the informational text */
 .info {
-  font-size: 22px;
+  font-size: 22px; /* Font size for the info text */
 }
 
+/* Styling for the game information section */
 .gameInfo {
-  padding: 0 34px;
-  font-family: "Baloo Bhaina 2", cursive;
+  padding: 0 34px; /* Horizontal padding */
+  font-family: "Baloo Bhaina 2", cursive; /* Font style for headings */
 }
 
+/* Heading styles in the game information */
 .gameInfo h1 {
-  font-size: 2.5rem;
+  font-size: 2.5rem; /* Large font size for headings */
 }
 
+/* Styling for the winner image */
 .imgbox img {
-  width: 0;
-  transition: width 1s ease-in-out;
+  width: 0; /* Initially hidden */
+  transition: width 1s ease-in-out; /* Smooth transition when width changes */
 }
 
+/* Utility classes for removing specific borders */
 .br-0 {
   border-right: 0;
 }
-
 .bl-0 {
   border-left: 0;
 }
-
 .bt-0 {
   border-top: 0;
 }
-
 .bb-0 {
   border-bottom: 0;
 }
 
+/* Styling for the reset button */
 #reset {
-  margin: 0 23px;
-  padding: 1px 18px;
-  background: #f3e7f9;
-  border-radius: 6px;
-  cursor: pointer;
-  font-family: "Baloo Bhaina 2";
-  font-size: 15px;
-  font-weight: bolder;
+  margin: 0 23px; /* Spacing around the button */
+  padding: 1px 18px; /* Padding inside the button */
+  background: #f3e7f9; /* Light purple background color */
+  border-radius: 6px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-family: "Baloo Bhaina 2"; /* Font style */
+  font-size: 15px; /* Font size */
+  font-weight: bolder; /* Bold font weight */
 }
 
+/* Styling for the winning line */
 .line {
-  background-color: black;
-  height: 3px;
-  width: 0;
-  position: absolute;
-  background-color: #911d91;
-  transition: width 1s ease-in-out;
+  background-color: black; /* Default color of the line */
+  height: 3px; /* Line thickness */
+  width: 0; /* Initially hidden */
+  position: absolute; /* Positioned relative to the container */
+  background-color: #911d91; /* Purple color for the line */
+  transition: width 1s ease-in-out; /* Smooth transition when width changes */
 }
 
+/* Media query for smaller screens */
 @media screen and (max-width: 950px) {
   .gameContainer {
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow wrapping of content */
   }
   .gameInfo {
-    margin-top: 34px;
+    margin-top: 34px; /* Spacing from the top */
   }
   .gameInfo h1 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Smaller font size for headings */
   }
   .container {
-    grid-template-rows: repeat(3, 20vw);
-    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(3, 20vw); /* Increase grid size */
+    grid-template-columns: repeat(3, 20vw); /* Increase grid size */
   }
 }
