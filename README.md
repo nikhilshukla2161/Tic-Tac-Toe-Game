@@ -67,7 +67,7 @@ TicTacToe/
 You can view and play the game live using GitHub Pages:
 [Live Preview](https://nikhilshukla2161.github.io/Tic-Tac-Toe-Game/)
 
-Replace `nikhilshukla2161` with your GitHub username to make the link functional.
+ 
 
 ---
 
