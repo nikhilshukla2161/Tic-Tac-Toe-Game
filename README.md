@@ -93,7 +93,7 @@ You can view and play the game live using GitHub Pages:
 ## Credits
 
 - Sound effects and images are from royalty-free resources.
-- Developed by [Your Name].
+- Developed by [Nikhil Shukla].
 
 ---
 
